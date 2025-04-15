@@ -56,3 +56,33 @@ cd real-time-chat-app
  ```bash
     const PORT = process.env.PORT || 5000;
 ```
+## 3. Set Up the Frontend (React)
+### After installing dependencies, navigate to the client directory (if the frontend is separated):
+
+```bash
+    cd client
+    npm start
+```
+### This will start the React development server on http://localhost:3000.
+
+## 4. Run the Server
+### Once the backend is set up, start the Node.js server:
+
+```bash
+    node server.js
+```
+### This will start the server on the defined port (e.g., http://localhost:5000).
+
+## 5. Connect to the Application
+### Open your browser and visit http://localhost:3000 for the frontend.
+### Enter a username and a room ID to join the chat room.
+
+### The application should now be running, and you should be able to see real-time communication between users.
+
+# Optional Features
+## MongoDB Integration
+### You can set up MongoDB to persist chat history and user data.
+### Modify the backend to store messages in MongoDB.
+
+## Tic-Tac-Toe Game
+### Play a real-time Tic-Tac-Toe game within the chat room.
