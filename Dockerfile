@@ -14,7 +14,7 @@ RUN npm install
 COPY backend/ ./
 
 ENV NODE_ENV=production
-ENV DB=mongodb://localhost:27017/Tic-Tac-Toe
+ENV DB=postgresql://demo_owner:Yx0hk1lubLBa@ep-purple-paper-a5a1imqv.us-east-2.aws.neon.tech/demo?sslmode=require
 ENV SECRET=zeel
 ENV PORT=5000
 
