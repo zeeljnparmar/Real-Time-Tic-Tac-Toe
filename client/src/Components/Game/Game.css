@@ -1,0 +1,107 @@
+:root {
+  --primary-color: #4b7bec;
+  --secondary-color: #dff9fb;
+  --border-color: #ccc;
+  --hover-color: #f1f2f6;
+  --x-color: #ff3f34;
+  --o-color: #1e90ff;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9f9f9;
+  margin: 0;
+  padding: 0;
+}
+
+.details-container {
+  margin-left: 3%;
+  padding: 1rem;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.fit-btn {
+  height: 15vh;
+  width: 13vw;
+  outline: none;
+  border: none;
+  background-color: var(--primary-color);
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.fit-btn:hover {
+  background-color: #3867d6;
+  transform: scale(1.05);
+}
+
+.game-container {
+  width: 50vw;
+  height: auto;
+  margin: 2rem auto;
+  display: grid;
+  grid-template-columns: repeat(3, 80px);
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.box {
+  width: 80px;
+  height: 80px;
+  background-color: white;
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border: 2px solid var(--border-color);
+  border-radius: 10px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.box:hover {
+  background-color: var(--hover-color);
+  transform: scale(1.05);
+}
+
+.box.x {
+  color: var(--x-color);
+}
+
+.box.o {
+  color: var(--o-color);
+}
+
+.controls {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.restart-btn {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #0984e3;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s;
+}
+
+.restart-btn:hover {
+  background-color: #74b9ff;
+}
+
+.turn-indicator {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
