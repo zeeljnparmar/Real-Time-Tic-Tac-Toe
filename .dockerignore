@@ -1,0 +1,25 @@
+# Ignore node_modules as it will be installed inside the Docker container
+node_modules/
+
+# Ignore npm debug log
+npm-debug.log
+
+# Ignore Dockerfile and .dockerignore itself
+Dockerfile
+.dockerignore
+
+# Ignore Git related files and folders
+.git/
+.gitignore
+
+# Ignore any build or temp files that aren't needed in the image
+dist/
+build/
+*.log
+
+# Ignore editor-specific files (e.g., VSCode, Sublime, etc.)
+.vscode/
+.idea/
+
+# Ignore the environment file (optional, if you use one like .env)
+.env
