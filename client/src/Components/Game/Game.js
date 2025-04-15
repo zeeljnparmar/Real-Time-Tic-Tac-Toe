@@ -4,7 +4,7 @@ import "./Game.css";
 import { useHistory, useParams } from "react-router-dom";
 import io from "socket.io-client";
 
-const ENDPOINT = "http://localhost:5000";
+const ENDPOINT = process.env.REACT_ENDPOINT||"http://localhost:5000";
 
 const style = {
   height: "60px",
